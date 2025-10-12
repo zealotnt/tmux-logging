@@ -14,6 +14,10 @@ default_save_complete_history_key="M-P" # Alt-Shift-p
 save_complete_history_key=$(tmux show-option -gqv "@save-complete-history-key")
 save_complete_history_key=${save_complete_history_key:-$default_save_complete_history_key}
 
+default_save_complete_history_with_ansi_key="C-0" # Ctrl-0
+save_complete_history_with_ansi_key=$(tmux show-option -gqv "@save-complete-history-with-ansi-key")
+save_complete_history_with_ansi_key=${save_complete_history_with_ansi_key:-$default_save_complete_history_with_ansi_key}
+
 default_clear_history_key="M-c" # Alt-c
 clear_history_key=$(tmux show-option -gqv "@clear-history-key")
 clear_history_key=${clear_history_key:-$default_clear_history_key}
