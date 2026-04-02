@@ -52,7 +52,7 @@ default_save_complete_history_path="$HOME"
 save_complete_history_path=$(tmux show-option -gqv "@save-complete-history-path")
 save_complete_history_path=${save_complete_history_path:-$default_save_complete_history_path}
 
-default_save_complete_history_filename="tmux-history-${filename_suffix}"
+default_save_complete_history_filename="tmux-history-%Y%m%dT%H%M%S.log"
 save_complete_history_filename=$(tmux show-option -gqv "@save-complete-history-filename")
 save_complete_history_filename=${save_complete_history_filename:-$default_save_complete_history_filename}
 
